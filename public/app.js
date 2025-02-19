@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const backendUrl = 'http://forumdeescola.vercel.app:3000';
+    const backendUrl = 'https://forumdeescola.vercel.app:3000';
     let token = localStorage.getItem('token') || null;
     const loginForm = document.getElementById('login-form');
     const registerForm = document.getElementById('register-form');
