@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapLink Mural</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <!-- Painel de Login/Cadastro -->
+    <div id="login-panel">
+      <h2>Login / Cadastro</h2>
+      <div id="user-info"></div>
+      <form id="login-form">
+        <input type="text" id="login-username" placeholder="Usuário" required>
+        <input type="password" id="login-password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <hr>
+      <form id="register-form">
+        <input type="text" id="register-username" placeholder="Novo Usuário" required>
+        <input type="password" id="register-password" placeholder="Senha" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <hr>
+      <!-- Formulário de criação de post (aparece quando logado) -->
+      <form id="create-post-form" style="display: none;">
+        <textarea id="post-content" placeholder="O que você está pensando?" required></textarea>
+        <input type="text" id="post-image" placeholder="URL da imagem (opcional)">
+        <button type="submit">Postar</button>
+      </form>
+      <div id="login-message"></div>
+    </div>
+
+    <!-- Painel do Mural -->
+    <div id="mural-panel">
+      <h2>Mural</h2>
+      <div id="posts-container">
+        <!-- Posts serão renderizados aqui via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
